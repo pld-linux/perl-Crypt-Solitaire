@@ -1,6 +1,7 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	Crypt
 %define		pnam	Solitaire
@@ -8,7 +9,7 @@ Summary:	Crypt::Solitaire Perl module - Solitaire cryptosystem
 Summary(pl):	Modu³ Perla Crypt::Solitaire - system kryptograficzny Solitaire
 Name:		perl-Crypt-Solitaire
 Version:	2.0
-Release:	1
+Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -48,5 +49,6 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes
 %{perl_sitelib}/Crypt/Solitaire.pm
+%dir %{perl_sitelib}/auto/Crypt/Solitaire
 %{perl_sitelib}/auto/Crypt/Solitaire/autosplit.ix
 %{_mandir}/man3/*
