@@ -3,8 +3,8 @@
 %bcond_without	tests	# Do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Crypt
-%define	pnam	Solitaire
+%define		pdir	Crypt
+%define		pnam	Solitaire
 Summary:	Crypt::Solitaire Perl module - Solitaire cryptosystem
 Summary(pl):	Modu³ Perla Crypt::Solitaire - system kryptograficzny Solitaire
 Name:		perl-Crypt-Solitaire
