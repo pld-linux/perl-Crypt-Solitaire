@@ -9,12 +9,12 @@ Summary:	Crypt::Solitaire Perl module - Solitaire cryptosystem
 Summary(pl):	Modu³ Perla Crypt::Solitaire - system kryptograficzny Solitaire
 Name:		perl-Crypt-Solitaire
 Version:	2.0
-Release:	2
+Release:	3
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -32,7 +32,8 @@ zdarzenia z powie¶ci Neala Stephensona "Cryptonomicom".
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -48,7 +49,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes
-%{perl_sitelib}/Crypt/Solitaire.pm
-%dir %{perl_sitelib}/auto/Crypt/Solitaire
-%{perl_sitelib}/auto/Crypt/Solitaire/autosplit.ix
+%{perl_vendorlib}/Crypt/Solitaire.pm
+%dir %{perl_vendorlib}/auto/Crypt/Solitaire
+%{perl_vendorlib}/auto/Crypt/Solitaire/autosplit.ix
 %{_mandir}/man3/*
