@@ -6,7 +6,7 @@
 %define		pdir	Crypt
 %define		pnam	Solitaire
 Summary:	Crypt::Solitaire Perl module - Solitaire cryptosystem
-Summary(pl):	Modu≥ Perla Crypt::Solitaire - system kryptograficzny Solitaire
+Summary(pl.UTF-8):   Modu≈Ç Perla Crypt::Solitaire - system kryptograficzny Solitaire
 Name:		perl-Crypt-Solitaire
 Version:	2.0
 Release:	4
@@ -25,10 +25,10 @@ Solitaire is a top-notch pencil-and-paper encryption system developed
 by Bruce Schneier, basing on story from Neal Stephenson's novel
 Cryptonomicon.
 
-%description -l pl
-Solitaire to system szyfrowania, do ktÛrego wystarczy o≥Ûwek i kartka
-papieru. Zosta≥ opracowany przez Bruce'a Schneiera na podstawie
-zdarzenia z powie∂ci Neala Stephensona "Cryptonomicom".
+%description -l pl.UTF-8
+Solitaire to system szyfrowania, do kt√≥rego wystarczy o≈Ç√≥wek i kartka
+papieru. Zosta≈Ç opracowany przez Bruce'a Schneiera na podstawie
+zdarzenia z powie≈õci Neala Stephensona "Cryptonomicom".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
