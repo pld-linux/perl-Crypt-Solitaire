@@ -9,7 +9,7 @@ Summary:	Crypt::Solitaire Perl module - Solitaire cryptosystem
 Summary(pl.UTF-8):	Moduł Perla Crypt::Solitaire - system kryptograficzny Solitaire
 Name:		perl-Crypt-Solitaire
 Version:	2.0
-Release:	4
+Release:	5
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
