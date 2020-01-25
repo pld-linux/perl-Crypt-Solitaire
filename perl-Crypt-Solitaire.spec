@@ -4,7 +4,6 @@
 
 %define		pdir	Crypt
 %define		pnam	Solitaire
-%include	/usr/lib/rpm/macros.perl
 Summary:	Crypt::Solitaire Perl module - Solitaire cryptosystem
 Summary(pl.UTF-8):	Moduł Perla Crypt::Solitaire - system kryptograficzny Solitaire
 Name:		perl-Crypt-Solitaire
